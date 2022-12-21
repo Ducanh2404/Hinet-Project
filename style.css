@@ -1,7 +1,6 @@
-    body{
+    *{
     padding: 0;
     margin: 0;
-    outline: None!important;
 }
 .navbar{
     background-color: #111;
@@ -9,7 +8,7 @@
     height: 80px;
     color:white;
     position: fixed!important;
-    z-index: 1;
+    z-index: 20000;
     width: 100%;
     Top:0;
 }
@@ -124,13 +123,32 @@
     background-color: rgb(255, 70, 85);
     Top:10px;
 }
-.container.video .video-intro{
-    height: 665px;
+.row .intro .video video{
+    object-position: center;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.row .intro .video{
+    top: 0;
+    bottom: 0;
+    height: 36vw;
+    width: 100%;
     position: absolute;
-    top: -17px;
-    left: 0;
-    right: 0;
-    padding: 0;
-    background-size:cover;
     overflow: hidden;
+}
+.text-intro{
+    width: 74%!important;
+    position: relative;
+    top:80px;
+    z-index: 5;
+    color: white;
+}
+.intro-des{
+    width: 100%;
+    font-size: 16px;
+    text-shadow: 0 0 0.75em rgb(0 0 0 / 50%);
+}
+.intro-name svg{
+    height: auto;
+    width: 85%;
 }
