@@ -1,12 +1,17 @@
-body{
+    body{
     padding: 0;
     margin: 0;
+    outline: None!important;
 }
 .navbar{
     background-color: #111;
     padding: 0 !important;
     height: 80px;
     color:white;
+    position: fixed!important;
+    z-index: 1;
+    width: 100%;
+    Top:0;
 }
 .navbar-left{
     fill: white;
@@ -35,6 +40,8 @@ body{
     font-family: 'SANS-SERIF','Segoe UI';
     margin: 7px 0 7px 0;
     padding: 7.5px 16px;
+    width: auto;
+    position: relative;
 }
 .items:hover{
     background: rgba(128,128,128,.3);
@@ -67,32 +74,63 @@ body{
     border-radius: 12px;
     cursor: pointer;
 }
+
 .drop-info{
     position: relative;
-}
-.dropped-info{
-    border-top:solid aqua 1px;
-    position: absolute;
-    top:39px;
-    background-color: #292929;
-    text-align: left;
+    width: 100%;
 
 }
 .dropped-info li{
     display: flex;
-    justify-content: center;
     align-items: left;
     list-style: none;
     text-decoration: none;
-    margin: 7px 0 7px 0;
-    padding: 7.5px 16px;
+    padding: 8px 16px;
     line-height: 16px;
     letter-spacing: .08em;
     font-weight: 600;
     line-height: 1.5;
     font-size: 13px;
     font-family: 'SANS-SERIF','Segoe UI';
+    color:#c7c7c7;
 }
-.drop-info:hover .dropped-info{
-   display: initial;
+.dropped-info li:hover{
+    background: rgba(128,128,128,.3);
+    border-radius: 6.4px;
+    color:#fcfcfc;
+}
+
+.dropped-info:hover{
+    visibility: visible;
+}
+.dropdown-info:hover .dropped-info{
+    visibility: visible;
+
+}
+.drop-info ul{
+    position: absolute;
+    top:30px;
+    background-color: #292929;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    padding:0;  
+}
+.underline{
+    width: 100%;
+    border-radius: 6.4px;
+    height: 4px;
+    padding:0!important;
+    background-color: rgb(255, 70, 85);
+    Top:10px;
+}
+.container.video .video-intro{
+    height: 665px;
+    position: absolute;
+    top: -17px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    background-size:cover;
+    overflow: hidden;
 }
