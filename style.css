@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     font-family: 'SANS-SERIF','Segoe UI';
-
 }
 .navbar{
     background-color: #111;
@@ -156,6 +155,14 @@
     padding:2rem;
     height: 36vw;
 }
+.intro::before{
+    border-left:1px solid rgba(236,232,225,.5);
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: calc(25% + 0.75rem);
+}
 .intro-des{
     display: flex;
     justify-content: center;
@@ -166,7 +173,7 @@
 }
 .intro-name{
     height: auto;
-    width: 70%;
+    width: 85%;
     display: flex;
     justify-content: center;
 }
@@ -175,6 +182,7 @@
     margin: 0;
 }
 .btn-intro{
+    position: relative;
     width: auto;
     min-width: 15rem;
     padding:19px 30px;
@@ -184,7 +192,32 @@
     color: white;
     font-weight: 700;
     text-align: center;
+    cursor: pointer;
+    z-index: 5;
+}
+.btn-contain{
+    width: auto;
+    min-width: 15rem;
     position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.btn-hover{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 120%;
+    top: 0;
+    left: -120%;
+    background-color: #0f1923;
+    z-index: 5;
+}
+.btn-contain:hover .btn-hover{
+    transform: translateX(90%) skew(-10deg);
+    transition: transform .3s ease-out;
+}
+.btn-contain:hover .btn-intro{
+    background-color: transparent;
 }
 .btn-cover::before{
     content: "";
@@ -211,4 +244,150 @@
     position: relative;
     margin-top: 3rem;
     padding:7px;
+}
+.btn-intro::before{
+    content: "";
+    position: absolute;
+    background-color: #0f1923;;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    height: 0.3rem;
+    width: 0.3rem;
+}
+.btn-intro::after{
+    content: "";
+    position: absolute;
+    background-color: #0f1923;;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    height: 0.2rem;
+    width: 0.2rem;
+}
+.polygon{
+    position: absolute;
+    background-color: #ff4655;
+    height: 16px;
+    width: 16px!important;
+    top: 4rem;
+    font-size: 1.6rem;
+    color: #ff4655;
+    left: 0;
+    padding:0!important;
+}
+.polygon::after{
+    margin-left: 16px;
+    border-left: 8px solid;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    content: "";
+    display: block;
+    position: absolute;
+}
+.container-fluid.news{
+    position: relative;
+    top:80px;
+    padding: 0!important;
+}
+
+.container.news::before{
+    border-left: 0 solid transparent;
+    border-right: 1em solid transparent;
+    border-bottom: 1em solid #ece8e1;
+    left: 0%;
+    content: "";
+    display: block;
+    position: absolute;
+    font-size: 3rem;
+    top:-3rem;
+}
+.details-box{
+    width:4.3rem!important;
+    position: absolute;
+    left: 47%;
+    top: 4rem;
+}
+.details-box::before{
+    background-color: #ff4655;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+}
+.details-box::after{
+    background-color: #ff4655;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 0.5rem;
+    width: 0.5rem;
+}
+.lastest-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 0!important;
+}
+@font-face {
+    font-family: Anton;
+    src: url(./font/Anton-Regular.ttf);
+}
+.lastest-title{
+    display: flex;
+    align-items: flex-end;
+    color: #ff4655;
+    font-size: 4.3rem;
+    font-family: Anton,sans-serif!important;
+    font-weight: 500;
+    line-height: .85;
+    padding:0;
+    margin-top: 2rem;
+}
+.lastest-link{
+    display: flex;
+    align-items: center ;
+    text-decoration: none;
+    color: #ff4655;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.arrow-link{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.col-md-4{
+    Padding:0!important;
+}
+
+.row.contents{
+    padding-bottom: 5vw;
+}
+.content-picture{
+    width:96%;
+}
+.content-details{
+    display: flex;
+    font-size: 0.8rem;
+    margin: 1.3rem 0 1rem;
+}
+.details-date{
+    color:#0f1923
+}
+.details-category{
+    margin-left: 1rem;
+    color: #ff4655;
+    font-weight: 600;
+
+}
+.content-title{
+    color:#383e3a;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: arial,sans-serif,georgia;
+}
+.row.ep{
 }
