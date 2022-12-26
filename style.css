@@ -3,7 +3,11 @@
     margin: 0;
     font-family: 'SANS-SERIF','Segoe UI';
 }
+body{
+    overflow-x: hidden;
+}
 .navbar{
+    display: block;
     background-color: #111;
     padding: 0 !important;
     height: 80px;
@@ -181,17 +185,26 @@
     padding: 0;
     margin: 0;
 }
-.btn-intro{
+.btn-text{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    width: auto;
+    min-width: 15rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+}
+.btn-background{
     position: relative;
     width: auto;
     min-width: 15rem;
-    padding:19px 30px;
+    padding: 1.6rem 3rem;
     border: 0;
-    font-size: 14px;
-    background-color: #ff4655;
-    color: white;
-    font-weight: 700;
-    text-align: center;
+    background-color: #ff4655;;
     cursor: pointer;
     z-index: 5;
 }
@@ -208,16 +221,20 @@
     height: 100%;
     width: 120%;
     top: 0;
-    left: -120%;
+    left: -5%;
     background-color: #0f1923;
     z-index: 5;
 }
 .btn-contain:hover .btn-hover{
-    transform: translateX(90%) skew(-10deg);
-    transition: transform .3s ease-out;
+    transform: translateX(0) skewX(-10deg);
+    transition: all .3s ease-out;
 }
-.btn-contain:hover .btn-intro{
-    background-color: transparent;
+.btn-contain:not(:hover) .btn-hover{
+    transform: translateX(-100%) skewX(-10deg);
+    transition: all .3s ease-out;
+}
+.btn-contain:hover .btn-background::before{
+    background-color: white;
 }
 .btn-cover::before{
     content: "";
@@ -245,7 +262,7 @@
     margin-top: 3rem;
     padding:7px;
 }
-.btn-intro::before{
+.btn-background::before{
     content: "";
     position: absolute;
     background-color: #0f1923;;
@@ -254,8 +271,9 @@
     z-index: 5;
     height: 0.3rem;
     width: 0.3rem;
+    transition: all .2s ease-in;
 }
-.btn-intro::after{
+.btn-background::after{
     content: "";
     position: absolute;
     background-color: #0f1923;;
@@ -264,6 +282,7 @@
     z-index: 5;
     height: 0.2rem;
     width: 0.2rem;
+    transition: all .2s ease-in;
 }
 .polygon{
     position: absolute;
@@ -404,7 +423,6 @@
 }
 .ep-content{
     position: relative;
-    display: flex;
     flex-direction: column;
     margin:6.3rem 2rem!important;
 }
@@ -415,32 +433,11 @@
     color:white;
     font-weight: 700;
 }
-.ep-btn-cover::before{
-    content: "";
-    position: absolute;
-    height: calc(50% - 0.2rem);
-    width: 100%;
-    left: 0;
-    top: 0;
-    border:1px solid rgba(236,232,225,.5);
-    border-bottom: 0px;
-
-}
-.ep-btn-cover::after{
-    content: "";
-    position: absolute;
-    height: calc(50% - 0.2rem);
-    width: 100%;
-    left: 0;
-    bottom:0;
-    border:1px solid rgba(236,232,225,.5);
-    border-top: 0px;
-}
 .ep-btn-cover{
     display: inline-block;
     position: relative;
     margin-top: 2.5rem;
-    padding:7px;
+    padding:8px;
 }
 .ep-btn-button::before{
     content: "";
@@ -462,26 +459,26 @@
     height: 0.2rem;
     width: 0.2rem;
 }
-.ep-btn-button{
+.btn-ep{
     display: inline-block;
     position: relative;
-    padding:19px 30px;
-    min-width: 17rem;
     border: 0;
     font-size: 14px;
-    background-color: #ff4655;
     color: white;
     font-weight: 700;
     text-align: center;
     cursor: pointer;
     z-index: 5;
+    width: auto;
+    min-width: 28rem;
 }
-footer{
+.footer{
     background-color: #111;
     padding-bottom: 48px;
     border-top: 2px solid #343434;
     position: relative;
     top: 80px;
+    padding:0!important;
 }
 .footer-linkgame{
     background-color: #292929;
@@ -506,7 +503,7 @@ footer{
     background: rgba(128,128,128,.3);
     border-radius: 6.4px;
 }
-footer ul{
+.footer ul{
     margin: 0;
     padding:0;
     display: flex;
@@ -529,12 +526,13 @@ footer ul{
     border-radius: 12px;
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
 .footer-logos{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 24px 0px 20px;
+    padding: 24px 0px 20px!important;
 }
 .footer-logo-riot:hover svg{
     fill:white;
@@ -543,13 +541,15 @@ footer ul{
     margin : 0 20px;
 }
 .footer-copyright{
-    margin:auto;
-    text-align: center;
     max-width: 640px;
     font-size: 13px;
     color:#7e7e7e;
     font-family: Arial,sans-serif;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .footer-legal-links{
     padding :24px 0 28px;
@@ -584,4 +584,40 @@ footer ul{
     padding:8px 12px;
     background-color: #292929;
     border-radius: 8px;
+}
+.game-overview{
+    position: relative;
+    top:80px;
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overview::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: calc(91.66667% - 0.25rem);
+    width: 100%;
+    margin-left: calc(8.33333% + 0.25rem);
+    border-top: 1px solid rgba(15,25,35,.2);
+
+}
+.overview{
+    position: relative;
+    padding-top: 2rem;
+    width: 100%;
+}
+.overview-title .title-text{
+    position: absolute;
+    right: 0;
+    color: #ff4655;
+    letter-spacing: .2em;
+    font-weight: 700;
+    font-family: Roboto,arial,georgia,sans-serif;
+    font-size: 1rem;
+    letter-spacing: .17em;
+    transform: scaleX(-1);
 }
