@@ -223,7 +223,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid" style="background-color: #ece8e1;">
+  <div class="container-fluid" style="background-color: #ece8e1;position: relative;top: 80px;">
     <div class="container game-overview">
       <div class="row overview">
         <div class="col-md-12">
@@ -267,7 +267,7 @@
               </div>
               <div class="ov-video">
                 <video src="./vid/overview.mp4" autoplay muted loop></video>
-                <button class="ov-video-btn">
+                <button id="open-modal" class="ov-video-btn">
                   <div class="btn-contain ov-btn">
                     <div class="btn-text ov-btn"><svg viewBox="0 0 72 72">
                         <path fill="none" stroke="#ece8e1" d="M33.5 34.5v-5l8 6v2l-8 6v-5m28-29l-7 7m-38 38l-7 7">
@@ -279,14 +279,13 @@
                   </div>
                 </button>
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid modal-contain">
+  <div id="modal" class="modal-contain">
     <div class="row">
       <div class="col-md-12" >
         <button id="btn-esc-modal">
@@ -304,6 +303,20 @@
           <iframe src="https://www.youtube.com/embed/2BYhYUsqX-I?autoplay=1&amp;mute=0&amp;rel=0&amp;modestbranding=1"
             width="560" height="315" frameborder="0" allow="autoplay" title=""
             data-testid="gameplayModal:youtube:iframe"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" style="position:relative;background:url(./img/bg-agents.jpeg) 100% 100%/contain no-repeat;;top:80px">
+    <div class="row">
+      <div class="container" style="position:relative">
+        <div class="row agents">
+          <div class="agents-copycontent">
+
+          </div>
+            <div class="animate-agents">
+
+            </div>
         </div>
       </div>
     </div>
@@ -389,13 +402,15 @@
       <div class="row">
         <div class="col-md-12 footer-ratings">
           <div class="footer-rating">
-            <img src="/img/rating.png" alt="">
+            <img src="./img/rating.png" alt="">
           </div>
         </div>
       </div>
     </div>
   </footer>
 
+
+  <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
