@@ -95,7 +95,6 @@ body {
 .drop-info {
     position: relative;
     width: 100%;
-
 }
 
 .dropped-info li {
@@ -103,7 +102,7 @@ body {
     align-items: left;
     list-style: none;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 7.5px 16px;
     line-height: 16px;
     letter-spacing: .08em;
     font-weight: 600;
@@ -111,8 +110,9 @@ body {
     font-size: 13px;
     font-family: 'SANS-SERIF', 'Segoe UI';
     color: #c7c7c7;
+    width: 100%;
+    margin: 6px;
 }
-
 .dropped-info li:hover {
     background: rgba(128, 128, 128, .3);
     border-radius: 6.4px;
@@ -128,23 +128,30 @@ body {
 
 }
 
-.drop-info ul {
+.dropped-info   {
     position: absolute;
-    top: 30px;
+    width: 100%;
+    top: 28px;
+    right: 0;
     background-color: #292929;
     display: flex;
     visibility: hidden;
     flex-direction: column;
-    padding: 0;
+    margin: 7px 0 7px 0;
+    padding: 7.5px 16px;
 }
-
+.dropped-info ul{
+    Padding:0!important;
+}
 .underline {
+    position: absolute;
     width: 100%;
     border-radius: 6.4px;
     height: 4px;
     padding: 0 !important;
     background-color: rgb(255, 70, 85);
-    Top: 10px;
+    Top: 0;
+    right: 0;
 }
 
 .row .intro-vid .video video {
@@ -836,11 +843,36 @@ body {
     z-index: 99999;
     padding: 0 !important;
 }
+.playnow-modal{
+    min-width: 66.7%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    background-color: #0f1923;
+    border-bottom: 1px solid #968d8c;
+    border-top: 1px solid #968d8c;
+    color: #f4f1ed;
+    max-height: 99vh;
+}
+.playnow-contain{
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
+}
 #btn-esc-modal {
     background-color: transparent;
     position: fixed;
     right: 0;
+    border: none;
+}
+#btn-esc-modal-plnow {
+    background-color: transparent;
+    position: absolute;
+    right: 16px;
+    Top:16px;
     border: none;
 }
 
@@ -930,7 +962,7 @@ body {
 .maps-transparent{
     position: absolute;
     bottom: 0;
-    right: 15%;
+    right: 0;
     z-index: 2;
 }
 .maps-bird{

@@ -2,7 +2,6 @@
 <html lang="en">
 
 
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,17 +42,19 @@
                   <a class="nav-link active" aria-current="page" href="#">THÔNG TIN TRÒ CHƠI</a>
                   <i class="bi bi-caret-down-fill d-flex justify-content-center align-items-center drop-down"></i>
                 </div>
-                <ul class="dropped-info">
-                  <div class="underline"></div>
-                  <li style="margin: 16px 16px 5px 16px;">ĐẶC VỤ</li>
-                  <li style="margin: 5px 16px 5px 16px;">BẢN ĐỒ</li>
-                  <li style="margin: 5px 16px 16px 16px;">KHO VŨ KHÍ</li>
+              </div>
+              <div class="dropped-info">
+                <div class="underline"></div>
+
+                <ul >
+                  <li >ĐẶC VỤ</li>
+                  <li >BẢN ĐỒ</li>
+                  <li >KHO VŨ KHÍ</li> 
                 </ul>
               </div>
             </li>
             <li class="nav-item items">
               <a class="nav-link active" aria-current="page" href="#">TRUYỀN THÔNG </a>
-              <div class="underline"></div>
             </li>
             <li class="nav-item items">
               <a class="nav-link active" aria-current="page" href="#">TIN TỨC</a>
@@ -81,7 +82,7 @@
                 d="M7.992 0C3.576 0 0 3.584 0 8s3.576 8 7.992 8C12.416 16 16 12.416 16 8s-3.584-8-8.008-8zm5.544 4.8h-2.36c-.256-1-.624-1.96-1.104-2.848A6.424 6.424 0 0113.536 4.8zM8 1.632A11.27 11.27 0 019.528 4.8H6.472A11.27 11.27 0 018 1.632zM1.808 9.6A6.594 6.594 0 011.6 8c0-.552.08-1.088.208-1.6h2.704A13.212 13.212 0 004.4 8c0 .544.048 1.072.112 1.6H1.808zm.656 1.6h2.36c.256 1 .624 1.96 1.104 2.848A6.39 6.39 0 012.464 11.2zm2.36-6.4h-2.36a6.39 6.39 0 013.464-2.848A12.52 12.52 0 004.824 4.8zM8 14.368A11.27 11.27 0 016.472 11.2h3.056A11.27 11.27 0 018 14.368zM9.872 9.6H6.128A11.77 11.77 0 016 8c0-.544.056-1.08.128-1.6h3.744C9.944 6.92 10 7.456 10 8s-.056 1.072-.128 1.6zm.2 4.448a12.52 12.52 0 001.104-2.848h2.36a6.424 6.424 0 01-3.464 2.848zM11.488 9.6c.064-.528.112-1.056.112-1.6s-.048-1.072-.112-1.6h2.704c.128.512.208 1.048.208 1.6s-.08 1.088-.208 1.6h-2.704z"
                 fill="#E8E8E8"></path>
             </svg>
-            <button class="btn-play">Chơi ngay</button>
+            <button id="btn-playnow" class="btn-play">Chơi ngay</button>
           </div>
         </div>
       </div>
@@ -286,7 +287,7 @@
       </div>
     </div>
   </div>
-  <div id="modal" class="modal-contain">
+  <div id="modal" class="container-fluid modal-contain">
     <div class="row">
       <div class="col-md-12">
         <button id="btn-esc-modal">
@@ -304,6 +305,28 @@
           <iframe src="https://www.youtube.com/embed/2BYhYUsqX-I?autoplay=1&amp;mute=0&amp;rel=0&amp;modestbranding=1"
             width="560" height="315" frameborder="0" allow="autoplay" title=""
             data-testid="gameplayModal:youtube:iframe"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal-plnow" class="container-fluid modal-contain" style="visibility:visible;">
+    <div class="row playnow-modal">
+      <div class="col-md-12 playnow-contain">
+        <button id="btn-esc-modal-plnow">
+          <div class="btn-contain ov-btn" style="border:1px solid #ece8e1;height: 3.75rem;width: 3.75rem;">
+            <div class="btn-text ov-btn"><svg viewBox="0 0 72 72">
+                <path fill="none" stroke="#ece8e1"
+                  d="M61.5 9.5l-7 7m-38 38l-7 7M30.3 42l2.8-3m8.6 3L30.3 30m11.4 0l-2.6 2.8"></path>
+              </svg>
+            </div>
+            <div class="btn-background ov-btn"></div>
+            <div class="btn-hover ov-btn"></div>
+          </div>
+        </button>
+        <div class="playnow-content">
+          <h3>
+            CHUẨN BỊ SẴN SÀNG ĐỂ CHƠI
+          </h3>
         </div>
       </div>
     </div>
@@ -366,6 +389,8 @@
           
         </div>
       </div>
+ 
+    </div>
       <div class="row ">
         <div class="col-md-12 maps-bg">
           <div class="maps-transparent"><img src="./img/maps-bg.png" alt="">
@@ -376,8 +401,6 @@
         
         </div>
       </div>
-    </div>
- 
   </div>
 
   <footer>

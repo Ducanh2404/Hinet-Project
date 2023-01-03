@@ -12,6 +12,6 @@ close_modal.addEventListener('click',function(){
 })
 
 //animation nhân vật
-const canvas = document.querySelector('canvas')
-const img    = canvas.toDataURL('image/png')
-document.getElementById('raze').src = img
+
+//button chơi ngay
+let btn_pl= document.getElementById("btn-playnow")
