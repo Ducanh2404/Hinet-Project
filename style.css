@@ -92,12 +92,12 @@ body {
     cursor: pointer;
 }
 
-.drop-info {
+.drop {
     position: relative;
     width: 100%;
 }
 
-.dropped-info li {
+.dropped li {
     display: flex;
     align-items: left;
     list-style: none;
@@ -113,22 +113,22 @@ body {
     width: 100%;
     margin: 6px;
 }
-.dropped-info li:hover {
+.dropped li:hover {
     background: rgba(128, 128, 128, .3);
     border-radius: 6.4px;
     color: #fcfcfc;
 }
 
-.dropped-info:hover {
+.dropped:hover {
     visibility: visible;
 }
 
-.dropdown-info:hover .dropped-info {
+.dropdown:hover .dropped {
     visibility: visible;
 
 }
 
-.dropped-info   {
+.dropped{
     position: absolute;
     width: 100%;
     top: 28px;
@@ -140,7 +140,7 @@ body {
     margin: 7px 0 7px 0;
     padding: 7.5px 16px;
 }
-.dropped-info ul{
+.dropped ul{
     Padding:0!important;
 }
 .underline {
@@ -841,7 +841,7 @@ body {
     overflow: hidden;
     z-index: 99999;
     padding: 0 !important;
-    display: initial;
+    display: none;
 }
 .playnow-modal{
     min-width: 66.7%;

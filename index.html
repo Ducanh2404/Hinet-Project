@@ -36,20 +36,19 @@
                     fill="#fff"></path>
                 </svg></a>
             </li>
-            <li class="nav-item items d-flex flex-column dropdown-info" style="display: flex; margin-left: 18px;">
-              <div class="drop-info d-flex flex-column">
+            <li class="nav-item items d-flex flex-column dropdown" style="display: flex; margin-left: 18px;">
+              <div class="drop d-flex flex-column">
                 <div class="title d-flex">
                   <a class="nav-link active" aria-current="page" href="#">THÔNG TIN TRÒ CHƠI</a>
                   <i class="bi bi-caret-down-fill d-flex justify-content-center align-items-center drop-down"></i>
                 </div>
               </div>
-              <div class="dropped-info">
+              <div class="dropped">
                 <div class="underline"></div>
-
-                <ul >
-                  <li >ĐẶC VỤ</li>
-                  <li >BẢN ĐỒ</li>
-                  <li >KHO VŨ KHÍ</li> 
+                <ul>
+                  <li>ĐẶC VỤ</li>
+                  <li>BẢN ĐỒ</li>
+                  <li>KHO VŨ KHÍ</li>
                 </ul>
               </div>
             </li>
@@ -62,9 +61,21 @@
             <li class="nav-item items">
               <a class="nav-link active" aria-current="page" href="#">BẢNG XẾP HẠNG</a>
             </li>
-            <li class="nav-item items" style="display: flex;">
-              <a class="nav-link active" aria-current="page" href="#">HỖ TRỢ</a>
-              <i class="bi bi-caret-down-fill d-flex justify-content-center align-items-center drop-down"></i>
+            <li class="nav-item items dropdown" style="display: flex;">
+              <div class="drop d-flex flex-column">
+                <div class="title d-flex">
+                  <a class="nav-link active" aria-current="page" href="#">HỖ TRỢ</a>
+                  <i class="bi bi-caret-down-fill d-flex justify-content-center align-items-center drop-down"></i>
+                </div>
+              </div>
+              <div class="dropped" style="min-width: 200px;left:0">
+                <div class="underline"></div>
+                <ul>
+                  <li>THÔNG SỐ</li>
+                  <li>HỖ TRỢ<i class="bi bi-arrow-up-right"></i></li>
+                  <li>Quy Chuẩn Cộng Đồng</li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item items" style="display: flex;">
               <a class="nav-link active" aria-current="page" href="#">MẠNG XÃ HỘI</a>
@@ -332,30 +343,32 @@
         </div>
         <div class="playnow-btn">
           <div class="pl-btn" style="text-align: center;">
-          <span style="font-family:Roboto, arial, georgia, sans-serif;font-size: 14px;">Tôi chưa có tài khoản Riot</span>
-          <div class="btn-cover btn-ep" style="min-width:17rem;margin-top:0">
-            <div class="btn-contain playnow">
-              <div class="btn-text playnow" style="width: 100%;color: #383e3a;">
-                TẠO MỚI NGAY
+            <span style="font-family:Roboto, arial, georgia, sans-serif;font-size: 14px;">Tôi chưa có tài khoản
+              Riot</span>
+            <div class="btn-cover btn-ep" style="min-width:17rem;margin-top:0">
+              <div class="btn-contain playnow">
+                <div class="btn-text playnow" style="width: 100%;color: #383e3a;">
+                  TẠO MỚI NGAY
+                </div>
+                <div class="btn-background playnow" style="background-color:white"></div>
+                <div class="btn-hover"></div>
               </div>
-              <div class="btn-background playnow" style="background-color:white"></div>
-              <div class="btn-hover"></div>
             </div>
           </div>
-        </div>
-        <div class="pl-btn" style="text-align: center;">
-          <span style="font-family:Roboto, arial, georgia, sans-serif;font-size: 14px;">Tôi đã có tài khoản Riot</span>
-          <div class="btn-cover btn-ep" style="min-width:17rem;margin-top:0">
-            <div class="btn-contain">
-              <div class="btn-text" style="width: 100%;">
-                TẢI GAME NGAY
-              </div>
-              <div class="btn-background "></div>
+          <div class="pl-btn" style="text-align: center;">
+            <span style="font-family:Roboto, arial, georgia, sans-serif;font-size: 14px;">Tôi đã có tài khoản
+              Riot</span>
+            <div class="btn-cover btn-ep" style="min-width:17rem;margin-top:0">
+              <div class="btn-contain">
+                <div class="btn-text" style="width: 100%;">
+                  TẢI GAME NGAY
+                </div>
+                <div class="btn-background "></div>
 
-              <div class="btn-hover"></div>
+                <div class="btn-hover"></div>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </div>
@@ -393,13 +406,15 @@
     </div>
   </div>
   <div class="container-fluid" style="position:relative;top:80px;background-color: #ece8e1">
-  <div class="container" style=" border-left: 1px solid rgba(15,25,35,.4);">
+    <div class="container" style=" border-left: 1px solid rgba(15,25,35,.4);">
       <div class="row">
         <div class="col-md-12 maps">
           <div class="maps-copycontent">
             <h2 class="copycontent-title">BẢN ĐỒ CỦA BẠN</h2>
-            <h5 class="ag copycontent-text" style="margin: 0 0 1.5rem;font-weight: 600;color:#383e3a;">CHIẾN ĐẤU KHẮP THẾ GIỚI</h5>
-            <p class="ag copycontent-text" style="max-width: calc(80% - 0.6rem);color: #768079;">Mỗi bản đồ đều là một sân chơi để bạn
+            <h5 class="ag copycontent-text" style="margin: 0 0 1.5rem;font-weight: 600;color:#383e3a;">CHIẾN ĐẤU KHẮP
+              THẾ GIỚI</h5>
+            <p class="ag copycontent-text" style="max-width: calc(80% - 0.6rem);color: #768079;">Mỗi bản đồ đều là một
+              sân chơi để bạn
               thỏa sức thể hiện tư duy sáng tạo của mình. Được xây dựng với mục đích phát triển chiến lược đội nhóm, các
               bản đồ VALORANT hứa hẹn mang đến cho người chơi những trận giao tranh ngoạn ngục cùng với muôn vàn khoảnh
               khắc xuất thần. Hãy là nguồn cảm hứng cho tất cả người chơi VALORANT và tạo ra cho mình lối chơi độc nhất
@@ -415,21 +430,21 @@
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
- 
+
     </div>
-      <div class="row ">
-        <div class="col-md-12 maps-bg">
-          <div class="maps-transparent"><img src="./img/maps-bg.png" alt="">
-            <div class="maps-bird">
-              <img src="./img/bird-bg.png" alt="">
-            </div>
+    <div class="row ">
+      <div class="col-md-12 maps-bg">
+        <div class="maps-transparent"><img src="./img/maps-bg.png" alt="">
+          <div class="maps-bird">
+            <img src="./img/bird-bg.png" alt="">
           </div>
-        
         </div>
+
       </div>
+    </div>
   </div>
 
   <footer>
