@@ -800,7 +800,6 @@ body {
     width: 100%;
     min-width: 0;
     transform: scale(0.95);
-    transition: .2s ease-in-out;
 }
 
 .btn-contain.ov-btn {
@@ -830,10 +829,10 @@ body {
 
 .btn-contain.ov-btn:hover .btn-text.ov-btn {
     transform: scale(1);
+    transition: .2s ease-in-out;
 }
 
 .modal-contain {
-    visibility: hidden;
     background-color: rgba(15, 25, 35, .8);
     height: 100%;
     width: 100%;
@@ -842,6 +841,7 @@ body {
     overflow: hidden;
     z-index: 99999;
     padding: 0 !important;
+    display: initial;
 }
 .playnow-modal{
     min-width: 66.7%;
@@ -853,15 +853,34 @@ body {
     border-top: 1px solid #968d8c;
     color: #f4f1ed;
     max-height: 99vh;
+    padding:20px;
+
 }
 .playnow-contain{
     min-height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+.playnow-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-family: Anton, sans-serif;
+    margin-bottom: 5rem;
+}
+.playnow-btn{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.btn-contain.playnow:hover .btn-text.playnow{
+    color: white !important;;
+}
+
 #btn-esc-modal {
     background-color: transparent;
     position: fixed;
@@ -915,11 +934,9 @@ body {
 .copycontent-text {
     font-family: Roboto, arial, georgia, sans-serif;
 }
-
 .btn-contain.ag-btn:hover .btn-text.ag-btn {
     color: white !important;
 }
-
 .btn-background.ag-btn::before {
     width: 0.2rem;
     height: 0.2rem;

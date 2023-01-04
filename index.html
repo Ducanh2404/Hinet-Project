@@ -14,7 +14,7 @@
   <title>VALORANT: tựa game bắn súng chiến thuật cạnh tranh 5 đấu 5 lấy các nhân vật làm nền tảng từ Riot Games</title>
 </head>
 
-<body>
+<body onscroll="function scroll()">
   <header>
     <nav class="container-fluid navbar navbar-expand-lg navbar-dark p-0 ">
       <div class="container-fluid navbar-top" style="padding:0;margin:0">
@@ -112,7 +112,7 @@
             </path>
           </svg>
         </div>
-        <div class="button">
+        <div id="freeplay" class="button">
           <div class="btn-cover">
             <div class="btn-contain">
               <div class="btn-text">CHƠI MIỄN PHÍ</div>
@@ -127,7 +127,7 @@
     </div>
   </div>
   <div class="container-fluid news" style="background-color: #ece8e1;">
-    <div class="container news" style="    border-left: 1px solid rgba(9,9,9,.4)">
+    <div class="container news" style="border-left: 1px solid rgba(9,9,9,.4)">
       <div class="row">
         <div class="details-box"></div>
       </div>
@@ -309,7 +309,7 @@
       </div>
     </div>
   </div>
-  <div id="modal-plnow" class="container-fluid modal-contain" style="visibility:visible;">
+  <div id="modal-plnow" class="container-fluid modal-contain">
     <div class="row playnow-modal">
       <div class="col-md-12 playnow-contain">
         <button id="btn-esc-modal-plnow">
@@ -324,9 +324,38 @@
           </div>
         </button>
         <div class="playnow-content">
-          <h3>
+          <span style="margin:0 30px">\</span>
+          <h4 style="font-size:1rem;font-family: Anton, sans-serif;margin:3px 0 0 0">
             CHUẨN BỊ SẴN SÀNG ĐỂ CHƠI
-          </h3>
+          </h4>
+          <span style="margin:0 30px">\</span>
+        </div>
+        <div class="playnow-btn">
+          <div class="pl-btn" style="text-align: center;">
+          <span style="font-family:Roboto, arial, georgia, sans-serif;font-size: 14px;">Tôi chưa có tài khoản Riot</span>
+          <div class="btn-cover btn-ep" style="min-width:17rem;margin-top:0">
+            <div class="btn-contain playnow">
+              <div class="btn-text playnow" style="width: 100%;color: #383e3a;">
+                TẠO MỚI NGAY
+              </div>
+              <div class="btn-background playnow" style="background-color:white"></div>
+              <div class="btn-hover"></div>
+            </div>
+          </div>
+        </div>
+        <div class="pl-btn" style="text-align: center;">
+          <span style="font-family:Roboto, arial, georgia, sans-serif;font-size: 14px;">Tôi đã có tài khoản Riot</span>
+          <div class="btn-cover btn-ep" style="min-width:17rem;margin-top:0">
+            <div class="btn-contain">
+              <div class="btn-text" style="width: 100%;">
+                TẢI GAME NGAY
+              </div>
+              <div class="btn-background "></div>
+
+              <div class="btn-hover"></div>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
