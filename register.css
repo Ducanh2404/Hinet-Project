@@ -1,0 +1,12 @@
+body{
+    background-image: url(./img/register-bg.jpg);
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.top-logo{
+    height: 41px;
+    width : 144px;
+}

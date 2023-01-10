@@ -32,10 +32,33 @@ close_pl.addEventListener('click',function(){
 //drop-navbar
 let dropbar = document.getElementById('dropbar').querySelectorAll('li')
 let images=document.getElementById('dropbar-img')
-let img
+let df=images.innerHTML
 for (var i=0;i<=dropbar.length;i++){
+    if(dropbar[i]){
+    let img
     dropbar[i].addEventListener('mouseover',function(){
-    img= this.attributes.name.value
-    images.innerHTML= '<img src="/img/'+img+'.jpeg" alt="" width="100%" height="100%"></img>'
+    if(this.hasAttribute('name')){
+    img = this.attributes.name.value
+    images.innerHTML= '<img src="/img/'+img+'.jpeg" alt="" width="100%" height="80%"></img>'
+    }
+    })
+    dropbar[i].addEventListener('mouseleave',function(){
+        images.innerHTML=df
+    })
+
+}}
+
+//list-riot
+let riot_list=document.getElementById('riot-list')
+let riot_drop=document.getElementById('riot-drop')
+let close_riot=document.getElementById('close-riot')
+
+riot_list.addEventListener('click',function(){
+    riot_drop.style.opacity=1
+    riot_drop.style.visibility="visible"
+    
 })
-}
+close_riot.addEventListener('click',function(){
+    riot_drop.style.opacity=0
+    riot_drop.style.visibility="hidden"
+})
