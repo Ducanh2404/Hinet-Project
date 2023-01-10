@@ -874,8 +874,12 @@ body {
 }
 .playnow-btn{
     display: flex;
-    justify-content: space-around;
-    width: 50%;
+    justify-content: center;
+
+}
+.pl-btn{
+    display: flex;
+    flex-direction: column;
 }
 .btn-contain.playnow:hover .btn-text.playnow{
     color: white !important;;
