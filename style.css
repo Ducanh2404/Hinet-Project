@@ -15,7 +15,7 @@ body {
     height: 80px;
     color: white;
     position: fixed !important;
-    z-index: 20000;
+    z-index: 100;
     width: 100%;
     Top: 0;
 }
@@ -25,7 +25,7 @@ body {
     margin-left: 36px;
 }
 
-.navbar-left:hover {
+.navbar-left:hover svg {
     fill: red;
     cursor: pointer;
 }
@@ -113,6 +113,7 @@ body {
     width: 100%;
     margin: 6px;
 }
+
 .dropped li:hover {
     background: rgba(128, 128, 128, .3);
     border-radius: 6.4px;
@@ -128,7 +129,7 @@ body {
 
 }
 
-.dropped{
+.dropped {
     position: absolute;
     width: 100%;
     top: 28px;
@@ -140,9 +141,11 @@ body {
     margin: 7px 0 7px 0;
     padding: 7.5px 16px;
 }
-.dropped ul{
-    Padding:0!important;
+
+.dropped ul {
+    Padding: 0 !important;
 }
+
 .underline {
     position: absolute;
     width: 100%;
@@ -843,7 +846,8 @@ body {
     padding: 0 !important;
     display: none;
 }
-.playnow-modal{
+
+.playnow-modal {
     min-width: 66.7%;
     position: absolute;
     top: 30%;
@@ -853,10 +857,11 @@ body {
     border-top: 1px solid #968d8c;
     color: #f4f1ed;
     max-height: 99vh;
-    padding:20px;
+    padding: 20px;
 
 }
-.playnow-contain{
+
+.playnow-contain {
     min-height: 40vh;
     position: relative;
     display: flex;
@@ -864,7 +869,8 @@ body {
     align-items: center;
     flex-direction: column;
 }
-.playnow-content{
+
+.playnow-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -872,7 +878,8 @@ body {
     font-family: Anton, sans-serif;
     margin-bottom: 5rem;
 }
-.playnow-btn{
+
+.playnow-btn {
     display: flex;
     justify-content: center;
 
@@ -881,8 +888,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-.btn-contain.playnow:hover .btn-text.playnow{
-    color: white !important;;
+
+.btn-contain.playnow:hover .btn-text.playnow {
+    color: white !important;
+    ;
 }
 
 #btn-esc-modal {
@@ -891,11 +900,12 @@ body {
     right: 0;
     border: none;
 }
+
 #btn-esc-modal-plnow {
     background-color: transparent;
     position: absolute;
     right: 16px;
-    Top:16px;
+    Top: 16px;
     border: none;
 }
 
@@ -938,9 +948,11 @@ body {
 .copycontent-text {
     font-family: Roboto, arial, georgia, sans-serif;
 }
+
 .btn-contain.ag-btn:hover .btn-text.ag-btn {
     color: white !important;
 }
+
 .btn-background.ag-btn::before {
     width: 0.2rem;
     height: 0.2rem;
@@ -966,29 +978,86 @@ body {
     margin-bottom: 6.3rem;
     margin-left: calc(8.33333% + 0.15rem);
     margin-top: 6.3rem;
-    border-top: 1px solid rgba(15,25,35,.4);
-    z-index:3;
+    border-top: 1px solid rgba(15, 25, 35, .4);
+    z-index: 3;
 }
-.btn-cover.btn-maps::before{
+
+.btn-cover.btn-maps::before {
     border-color: #bdbcb7;
 }
-.btn-cover.btn-maps::after{
+
+.btn-cover.btn-maps::after {
     border-color: #bdbcb7;
 }
-.maps-bg{
+
+.maps-bg {
     position: absolute;
     height: 100%;
     top: 0;
 }
-.maps-transparent{
+
+.maps-transparent {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: 2;
 }
-.maps-bird{
+
+.maps-bird {
     position: absolute;
     top: 5%;
     right: 45%;
     z-index: 1;
+}
+
+.navbar-drop {
+    overflow: hidden;
+    background-color: white;
+}
+
+.navbar-drop-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px 0 24px;
+}
+
+.close-dropbar {
+    width: 32px;
+    height: 32px;
+
+}
+
+.dropbar-list li {
+    list-style: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 12px 8px 16px;
+}
+
+.dropbar-list li:hover {
+    background-color: rgba(186, 186, 186, .4);
+    border-radius: 6.4px;
+}
+
+.dropbar-list a {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+.dropbar-list a:hover {
+    color: #4a4a4a;
+
+}
+
+.dropbar-img img {
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.dropbar-img {
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+    color: #0a0a0a;
+    font-size: 10px;
+    font-weight: 700;
 }

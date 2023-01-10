@@ -28,3 +28,14 @@ close_pl.addEventListener('click',function(){
     
     modal_pl.style.display ="none";
 })
+
+//drop-navbar
+let dropbar = document.getElementById('dropbar').querySelectorAll('li')
+let images=document.getElementById('dropbar-img')
+let img
+for (var i=0;i<=dropbar.length;i++){
+    dropbar[i].addEventListener('mouseover',function(){
+    img= this.attributes.name.value
+    images.innerHTML= '<img src="/img/'+img+'.jpeg" alt="" width="100%" height="100%"></img>'
+})
+}
