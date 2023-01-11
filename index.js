@@ -55,10 +55,32 @@ let close_riot=document.getElementById('close-riot')
 
 riot_list.addEventListener('click',function(){
     riot_drop.style.opacity=1
+    riot_drop.style.display="initial"
     riot_drop.style.visibility="visible"
-    
+
 })
 close_riot.addEventListener('click',function(){
     riot_drop.style.opacity=0
+    riot_drop.style.display="none"
     riot_drop.style.visibility="hidden"
+
 })
+
+//menu-mobile
+let pl_mobile=document.getElementById('play-mobile')
+let close_mobile=document.getElementById('close-mobile')
+let menu_mobile = document.getElementById('menu-mobile')
+let open_menu=document.getElementById('open-mobile')
+
+open_menu.addEventListener('click',function(){
+    menu_mobile.style.transform="translateX(0)";
+})
+pl_mobile.addEventListener('click',function(){
+    modal_pl.style.display="initial";
+    menu_mobile.style.display ="none";
+
+})
+close_mobile.addEventListener('click',function(){
+    menu_mobile.style.transform="translateX(100%)";
+})
+

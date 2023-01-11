@@ -16,8 +16,8 @@
 
 <body>
   <header>
-    <nav class="container-fluid navbar navbar-expand-lg navbar-dark p-0 " >
-      <div class="container-fluid navbar-top" style="padding:0;margin:0">
+    <nav class="container-fluid navbar navbar-expand-lg navbar-dark p-0 ">
+      <div class="container-fluid navbar-top" style="padding:0;margin:0;">
         <div class="navbar-left" id="riot-list">
           <svg width="85" height="27" viewBox="0 0 587.93 165">
             <path
@@ -25,17 +25,16 @@
             </path>
           </svg>
           <i class="bi bi-caret-down-fill navbar-left drop-down"></i>
+          <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" height="26" viewBox="0 0 100 100"
+              width="38">
+              <path
+                d="M99.25 48.66V10.28c0-.59-.75-.86-1.12-.39l-41.92 52.4a.627.627 0 00.49 1.02h30.29c.82 0 1.59-.37 2.1-1.01l9.57-11.96c.38-.48.59-1.07.59-1.68zM1.17 50.34L32.66 89.7c.51.64 1.28 1.01 2.1 1.01h30.29c.53 0 .82-.61.49-1.02L1.7 9.89c-.37-.46-1.12-.2-1.12.39v38.38c0 .61.21 1.2.59 1.68z"
+                fill="#fff"></path>
+            </svg></a>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-center d-flex justify-content-center align-items-center">
-            <li class="nav-item">
-              <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" height="26" viewBox="0 0 100 100"
-                  width="38">
-                  <path
-                    d="M99.25 48.66V10.28c0-.59-.75-.86-1.12-.39l-41.92 52.4a.627.627 0 00.49 1.02h30.29c.82 0 1.59-.37 2.1-1.01l9.57-11.96c.38-.48.59-1.07.59-1.68zM1.17 50.34L32.66 89.7c.51.64 1.28 1.01 2.1 1.01h30.29c.53 0 .82-.61.49-1.02L1.7 9.89c-.37-.46-1.12-.2-1.12.39v38.38c0 .61.21 1.2.59 1.68z"
-                    fill="#fff"></path>
-                </svg></a>
-            </li>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-center justify-content-center align-items-center"
+            style="display:flex">
             <li class="nav-item items d-flex flex-column dropdown" style="display: flex; margin-left: 18px;">
               <div class="drop d-flex flex-column">
                 <div class="title d-flex">
@@ -61,7 +60,7 @@
             <li class="nav-item items">
               <a class="nav-link active" aria-current="page" href="#">BẢNG XẾP HẠNG</a>
             </li>
-            <li class="nav-item items dropdown" style="display: flex;">
+            <li class="nav-item xxl items dropdown respon-nav" style="display: flex;">
               <div class="drop d-flex flex-column">
                 <div class="title d-flex">
                   <a class="nav-link active" aria-current="page" href="#">HỖ TRỢ</a>
@@ -77,23 +76,48 @@
                 </ul>
               </div>
             </li>
-            <li class="nav-item items" style="display: flex;">
+            <li class="nav-item xxl items respon-nav" style="display: flex;">
               <a class="nav-link active" aria-current="page" href="#">MẠNG XÃ HỘI</a>
               <i class="bi bi-caret-down-fill d-flex justify-content-center align-items-center drop-down"></i>
             </li>
-            <!-- <li class="nav-item items" style="display: flex;">
-            <a class="nav-link active" aria-current="page" href="#">THỂ THAO ĐIỆN TỬ</a>
-            <i class="bi bi-arrow-up-right d-flex justify-content-center align-items-center drop-down"></i>
-          </li> -->
+            <li class="nav-item xxl items respon-nav" style="display: flex;">
+              <a class="nav-link active" aria-current="page" href="#">THỂ THAO ĐIỆN TỬ</a>
+              <i class="bi bi-arrow-up-right d-flex justify-content-center align-items-center drop-down"></i>
+            </li>
           </ul>
-          <div class="d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-center align-items-center ">
             <svg width="32" height="32" class="language" viewBox="0 0 16 16">
               <title>globeIcon</title>
               <path
                 d="M7.992 0C3.576 0 0 3.584 0 8s3.576 8 7.992 8C12.416 16 16 12.416 16 8s-3.584-8-8.008-8zm5.544 4.8h-2.36c-.256-1-.624-1.96-1.104-2.848A6.424 6.424 0 0113.536 4.8zM8 1.632A11.27 11.27 0 019.528 4.8H6.472A11.27 11.27 0 018 1.632zM1.808 9.6A6.594 6.594 0 011.6 8c0-.552.08-1.088.208-1.6h2.704A13.212 13.212 0 004.4 8c0 .544.048 1.072.112 1.6H1.808zm.656 1.6h2.36c.256 1 .624 1.96 1.104 2.848A6.39 6.39 0 012.464 11.2zm2.36-6.4h-2.36a6.39 6.39 0 013.464-2.848A12.52 12.52 0 004.824 4.8zM8 14.368A11.27 11.27 0 016.472 11.2h3.056A11.27 11.27 0 018 14.368zM9.872 9.6H6.128A11.77 11.77 0 016 8c0-.544.056-1.08.128-1.6h3.744C9.944 6.92 10 7.456 10 8s-.056 1.072-.128 1.6zm.2 4.448a12.52 12.52 0 001.104-2.848h2.36a6.424 6.424 0 01-3.464 2.848zM11.488 9.6c.064-.528.112-1.056.112-1.6s-.048-1.072-.112-1.6h2.704c.128.512.208 1.048.208 1.6s-.08 1.088-.208 1.6h-2.704z"
                 fill="#E8E8E8"></path>
             </svg>
-            <button id="btn-playnow" class="btn-play">Chơi ngay</button>
+            <button id="btn-playnow" class="btn-play respon-nav">Chơi ngay</button>
+          </div>
+          <div id="open-mobile" class="open-mobile pe-2">
+            <svg style="width:48px;height:48px" viewBox="0 0 48 48">
+              <title>burgerNav</title>
+              <path d="M0 18A18 18 0 0118 0h12a18 18 0 0118 18v12a18 18 0 01-18 18H18A18 18 0 010 30z" fill="gray"
+                fill-opacity=".2"></path>
+              <path d="M15 18h18v2H15zm0 5h18v2H15zm0 7v-2h18v2z" fill="#fcfcfc"></path>
+            </svg>
+          </div>
+          <div id="menu-mobile" class="menu-mobile">
+            <ul style="padding:0;font-family: Tahoma,sans-serif;font-weight: 600;">
+              <li style="padding: 16px;display:flex;justify-content:space-between ;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="35" viewBox="0 0 100 100" width="35"><path d="M99.25 48.66V10.28c0-.59-.75-.86-1.12-.39l-41.92 52.4a.627.627 0 00.49 1.02h30.29c.82 0 1.59-.37 2.1-1.01l9.57-11.96c.38-.48.59-1.07.59-1.68zM1.17 50.34L32.66 89.7c.51.64 1.28 1.01 2.1 1.01h30.29c.53 0 .82-.61.49-1.02L1.7 9.89c-.37-.46-1.12-.2-1.12.39v38.38c0 .61.21 1.2.59 1.68z" fill="#fff"></path></svg>
+                <svg id="close-mobile" style="width:48px;height:48px"  viewBox="0 0 48 48"><title>burgerNavClose</title><path d="M0 18A18 18 0 0118 0h12a18 18 0 0118 18v12a18 18 0 01-18 18H18A18 18 0 010 30z" fill="gray" fill-opacity=".2"></path><path d="M31 18.41L29.59 17 24 22.59 18.4 17l-1.41 1.41L22.58 24l-5.59 5.59L18.4 31l5.59-5.59L29.58 31l1.41-1.41L25.4 24z" fill="#fcfcfc"></path></svg>
+              </li>
+              
+              <li>THÔNG TIN TRÒ CHƠI</li>
+              <li>TRUYỀN THÔNG</li>
+              <li>TIN TỨC</li>
+              <li>BẢNG XẾP HẠNG</li>
+              <li>HỖ TRỢ</li>
+              <li>MẠNG XÃ HỘI</li>
+              <li>THỂ THAO ĐIỆN TỬ</li>
+              <li><button id="play-mobile" class="play-mobile">CHƠI NGAY</button></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -109,7 +133,7 @@
             </svg>
             <i class="bi bi-caret-down-fill navbar-left drop-down"></i>
           </div>
-          <div  id="close-riot" class="close-dropbar" style="cursor:pointer">
+          <div id="close-riot" class="close-dropbar" style="cursor:pointer">
             <svg class="" viewBox="0 0 32 32">
               <title>applicationSwitcher2DesktopClose</title>
               <path
@@ -126,66 +150,70 @@
         <div class="col-md-2">
           <ul>
             <li class="fw-bold" style="letter-spacing: .08em;">TRÒ CHƠI</li>
-            <li name="lol"><a href="" >LIÊN MINH HUYỀN THOẠI</a></li>
-            <li name="tft"><a href="" >ĐẤU TRƯỜNG CHÂN LÝ</a></li>
-            <li name="vlr"><a href="" >VALORANT</a></li>
-            <li name="run"><a href="" >HUYỀN THOẠI RUNETERRA</a></li>
-            <li name="rift"><a href="" >LMHT: TỐC CHIẾN</a></li>
+            <li name="lol"><a href="">LIÊN MINH HUYỀN THOẠI</a></li>
+            <li name="tft"><a href="">ĐẤU TRƯỜNG CHÂN LÝ</a></li>
+            <li name="vlr"><a href="">VALORANT</a></li>
+            <li name="run"><a href="">HUYỀN THOẠI RUNETERRA</a></li>
+            <li name="rift"><a href="">LMHT: TỐC CHIẾN</a></li>
           </ul>
         </div>
         <div class="col-md-2">
           <ul>
             <li class="fw-bold" style="letter-spacing: .08em;">FORGE</li>
-            <li name="ruin" ><a href="" >RUINED KING</a></li>
-            <li name="conv"><a href="" >CONV/RGENCE</a></li>
-            <li name="nunu"><a href="" >SONG OF NUNU</a></li>
-            <li name="riotforce"><a href="" >TRÒ CHƠI CỦA RIOT FORGE</a></li>
+            <li name="ruin"><a href="">RUINED KING</a></li>
+            <li name="conv"><a href="">CONV/RGENCE</a></li>
+            <li name="nunu"><a href="">SONG OF NUNU</a></li>
+            <li name="riotforce"><a href="">TRÒ CHƠI CỦA RIOT FORGE</a></li>
           </ul>
           <ul>
             <li class="fw-bold" style="letter-spacing: .08em;">ESPORTS</li>
-            <li name="lolnews"><a href="" >LOL ESPORTS</a></li>
-            <li name="vlrnews"><a href="" >VALORANT ESPORTS</a></li>
+            <li name="lolnews"><a href="">LOL ESPORTS</a></li>
+            <li name="vlrnews"><a href="">VALORANT ESPORTS</a></li>
           </ul>
         </div>
         <div class="col-md-2">
           <ul>
             <li class="fw-bold" style="letter-spacing: .08em;">GIẢI TRÍ</li>
-            <li name="arcane"><a href="" >ARCANE</a></li>
-            <li name="universe"><a href="" >VŨ TRỤ</a></li>
-            <li name="music"><a href="" >RIOT GAMES MUSIC</a></li>
+            <li name="arcane"><a href="">ARCANE</a></li>
+            <li name="universe"><a href="">VŨ TRỤ</a></li>
+            <li name="music"><a href="">RIOT GAMES MUSIC</a></li>
           </ul>
           <ul>
             <li class="fw-bold" style="letter-spacing: .08em;">KINH DOANH</li>
-            <li name="games"><a href="" >RIOT GAMES</a></li>
-            <li name="help"><a href="" >HỖ TRỢ RIOT</a></li>
+            <li name="games"><a href="">RIOT GAMES</a></li>
+            <li name="help"><a href="">HỖ TRỢ RIOT</a></li>
           </ul>
         </div>
         <div id="dropbar-img" class="col-md-6" style="min-height:420px">
           <div class="row dropbar-img" style="height:auto">
-              <a href="" class="col-md-6"><img src="./img/default1.jpeg" width="100%" alt="">Bản Mở Rộng Huyền Thoại Runeterra Mới -
-                Trường Ca Darkin: Chiến Binh Tận Thế
-              </a>
-              <a href="" class="col-md-6"><img src="/img/default2.jpeg" width="100%" alt="">Dậy sóng chiến trường cùng Đặc Vụ Kiểm Soát
-                Harbor, tân trang bộ sưu tập của bạn với gói Ion cùng BattlePass mới toanh và tham gia Phần Xếp Hạng mới
-                - tất cả sẽ có tại VALORANT HỒI 05//PHẦN III.
-              </a>
+            <a href="" class="col-md-6"><img src="./img/default1.jpeg" width="100%" alt="">Bản Mở Rộng Huyền Thoại
+              Runeterra Mới -
+              Trường Ca Darkin: Chiến Binh Tận Thế
+            </a>
+            <a href="" class="col-md-6"><img src="/img/default2.jpeg" width="100%" alt="">Dậy sóng chiến trường cùng Đặc
+              Vụ Kiểm Soát
+              Harbor, tân trang bộ sưu tập của bạn với gói Ion cùng BattlePass mới toanh và tham gia Phần Xếp Hạng mới
+              - tất cả sẽ có tại VALORANT HỒI 05//PHẦN III.
+            </a>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <div class="container-fluid p-0" style="position: relative;top:80px">
+  <div class="container-fluid" style="position: relative;top:80px">
     <div class="row">
-      <div class="intro-vid">
-        <div class="video">
-          <video width="100%" height="100%" autoplay muted loop playsinline
-            src="./vid/VALORANT_ANNO22_SHATTERED_16x9_27s.mp4"></video>
+      <div class="col-md-12">
+        <div class="intro-vid">
+          <div class="video">
+            <video width="100%" height="100%" autoplay muted loop playsinline
+              src="./vid/VALORANT_ANNO22_SHATTERED_16x9_27s.mp4"></video>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container"
+  <div class="container p-0"
     style="position: relative;top:80px;border-left:1px solid #dee2e6;border-right:1px solid rgba(236,232,225,.5);z-index: 5;">
     <div class="row intro">
       <div class="text-intro">
@@ -396,7 +424,7 @@
     </div>
   </div>
   <div id="modal-plnow" class="container-fluid modal-contain">
-    <div class="row playnow-modal">
+    <div class="row playnow-modal" style="width:auto">
       <div class="col-md-12 playnow-contain">
         <button id="btn-esc-modal-plnow">
           <div class="btn-contain ov-btn" style="border:1px solid #ece8e1;height: 3.75rem;width: 3.75rem;">
@@ -421,16 +449,16 @@
             <span style="font-family:Roboto, arial, georgia, sans-serif;font-size: 14px;">Tôi chưa có tài khoản
               Riot</span>
             <a href="register.html">
-            <div class="btn-cover" style="min-width:17rem;margin-top:0">
-              <div class="btn-contain playnow">
-                <div class="btn-text playnow" style="width: 100%;color: #383e3a;">
-                  TẠO MỚI NGAY
+              <div class="btn-cover" style="min-width:17rem;margin-top:0">
+                <div class="btn-contain playnow">
+                  <div class="btn-text playnow" style="width: 100%;color: #383e3a;">
+                    TẠO MỚI NGAY
+                  </div>
+                  <div class="btn-background playnow" style="background-color:white"></div>
+                  <div class="btn-hover"></div>
                 </div>
-                <div class="btn-background playnow" style="background-color:white"></div>
-                <div class="btn-hover"></div>
               </div>
-            </div>
-          </a>
+            </a>
           </div>
           <div class="pl-btn" style="text-align: center;">
             <span style="font-family:Roboto, arial, georgia, sans-serif;font-size: 14px;">Tôi đã có tài khoản
@@ -483,7 +511,7 @@
     </div>
   </div>
   <div class="container-fluid" style="position:relative;top:80px;background-color: #ece8e1">
-    <div class="container" style=" border-left: 1px solid rgba(15,25,35,.4);">
+    <div class="container" style=" border-left: 1px solid rgba(15,25,35,.4);position: relative;z-index: 3;">
       <div class="row">
         <div class="col-md-12 maps">
           <div class="maps-copycontent">
@@ -514,7 +542,7 @@
     </div>
     <div class="row ">
       <div class="col-md-12 maps-bg">
-        <div class="maps-transparent"><img src="./img/maps-bg.png" alt="">
+        <div class="maps-transparent"><img src="./img/maps-bg.png" width="100%" height="100%" alt="">
           <div class="maps-bird">
             <img src="./img/bird-bg.png" alt="">
           </div>
